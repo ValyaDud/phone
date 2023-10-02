@@ -24,13 +24,18 @@ public class Phone {
 
     public void receiveCall(String name){
 
-        System.out.println("Звонит" + name);
+        System.out.println("Звонит" + " " + name);
     }
     public int getNumber(){
         return number;
     }
-
+    public String getModel(){
+        return model;
+    }
+    public double getWeight(){
+        return weight;
+    }
     public void showInfo() {
-        System.out.printf("Phone : \n number - %d model - %s weight - %.2fg \n", number, model, weight);
+        System.out.printf("Phone : \n number - %d model - %s weight - %.2fg \n",getNumber(), getModel(), getWeight());
     }
 }
