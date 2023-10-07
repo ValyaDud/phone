@@ -1,18 +1,18 @@
 public class Main  {
     public static void main(String[] args) {
-    String name = "Valya";
 
 
-    Phone apple = new Phone(70, "Iphone" , 172d);
-    apple.showInfo();
-    apple.receiveCall(name);
 
-    Phone samsung = new Phone(123, "Samsung");
-    samsung.showInfo();
-    samsung.receiveCall(name);
+    Phone phone = new Phone(70, "Iphone" , 172d);
+    phone.showInfo();
+    phone.receiveCall("Ilya");
 
-    Phone poco = new Phone();
-    poco.showInfo();
-    poco.receiveCall(name);
+    Phone phone1 = new Phone(123, "Samsung");
+    phone1.showInfo();
+    phone1.receiveCall("Walya");
+
+    Phone phone3 = new Phone();
+    phone3.showInfo();
+    phone3.receiveCall("Julia");
     }
 }

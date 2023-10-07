@@ -1,7 +1,7 @@
 public class Phone {
-      int number;
-     String model;
-    double weight;
+     private int number;
+     private  String model;
+    private double weight;
 
     public Phone() {
 
@@ -24,7 +24,7 @@ public class Phone {
 
     public void receiveCall(String name){
 
-        System.out.println("Звонит" + " " + name);
+        System.out.printf("Calling %s /n", name);
     }
     public int getNumber(){
         return number;
