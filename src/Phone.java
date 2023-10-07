@@ -1,7 +1,29 @@
-public class Phone {
+public abstract class Phone  implements Callable, Informable {
      private int number;
      private  String model;
     private double weight;
+
+    public void setModel(String model){
+        this.model = model;
+    }
+    public String getModel(){
+        return model;
+    }
+
+    public int getNumber(){
+        return number;
+    }
+    public void setNumber(int number){
+        this.number = number;
+    }
+
+    public double getWeight(){
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
 
     public Phone() {
 
@@ -10,32 +32,9 @@ public class Phone {
         this.weight = 0;
 
     }
-    public Phone(int number, String model) {
-        this.number = number;
-        this.model = model;
-        this.weight = 0;
-    }
-
-    public Phone(int number, String model, double weight) {
-        this.number = number;
-        this.model = model;
-        this.weight = weight;
-    }
-
     public void receiveCall(String name){
 
-        System.out.printf("Calling %s /n", name);
+        System.out.printf("Calling %s \n", name);
     }
-    public int getNumber(){
-        return number;
-    }
-    public String getModel(){
-        return model;
-    }
-    public double getWeight(){
-        return weight;
-    }
-    public void showInfo() {
-        System.out.printf("Phone : \n number - %d model - %s weight - %.2fg \n",getNumber(), getModel(), getWeight());
-    }
+    public abstract void showInfo();
 }
