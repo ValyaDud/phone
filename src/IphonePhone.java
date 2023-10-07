@@ -6,6 +6,6 @@ public class IphonePhone extends Phone {
 
     @Override
     public void receiveCall(String name) {
-        System.out.printf(" Calling is %s", name);
+        System.out.printf("Hello motherfucker, Calling is %s", name);
     }
 }
