@@ -1,4 +1,5 @@
-public abstract class Phone  implements Callable, Informable {
+public abstract class Phone  implements Callable, Informable, Cloneable {
+
      private int number;
      private  String model;
     private double weight;
@@ -37,4 +38,11 @@ public abstract class Phone  implements Callable, Informable {
         System.out.printf("Calling %s \n", name);
     }
     public abstract void showInfo();
+
+    public Phone clone () throws CloneNotSupportedException {
+        return (Phone) super.clone();
+    }
+    public String toString() {
+        return " Phone number = " + getNumber();
+    }
 }

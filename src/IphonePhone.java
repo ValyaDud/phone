@@ -1,4 +1,4 @@
-public class IphonePhone extends Phone {
+public class IphonePhone extends Phone  {
     @Override
     public void showInfo() {
         System.out.println("Iphone phone : " + " " + getModel() + " " + getNumber() + " " + getWeight());
@@ -9,3 +9,4 @@ public class IphonePhone extends Phone {
         System.out.printf("Hello motherfucker, Calling is %s", name);
     }
 }
+
